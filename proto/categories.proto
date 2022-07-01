@@ -28,19 +28,19 @@ message CreateCategoryResponse {
     FindAllData data = 3;
 }
 message FindAllData {
-   optional string id = 0;
-   optional string name = 1;
-   optional string description = 2;
-   optional string icon = 3;
+   optional string id = 1;
+   optional string name = 2;
+   optional string description = 3;
+   optional string icon = 4;
     enum Status {
         PUBLISHED = 0;
         ARCHIEVED = 1;
         DELETED = 2;
         DRAFT = 3;
     }
-    optional Status status = 4;
-    optional string updatedAt = 5;    
-    optional string createdAt = 6;    
+    optional Status status = 5;
+    optional string updatedAt = 6;    
+    optional string createdAt = 7;    
 }
 message FindOneRequest {
     string id = 1;
